@@ -8,9 +8,19 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
   </head>
 
   <body>
+
+    <nav class="navbar justify-content-between px-3">
+        <%= link_to "Savemovies🍿", lists_path, class: "navbar-brand font" %>
+        <ul class="navbar-nav">
+          <li>
+            <%= link_to 'New list', new_list_path, class: "nav-link font" %>
+          </li>
+        </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>

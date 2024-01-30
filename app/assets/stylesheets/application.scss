@@ -1,0 +1,162 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap";
+@import "font-awesome";
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap');
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.font {
+  font-family: 'Gaegu', sans-serif;
+}
+
+.navbar {
+  background-color: #F5EEE6;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 24px;
+  color: #382929;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 20px;
+  color: #382929;
+}
+.banner {
+  background-image: url("banner.png");
+  padding: 180px 0;
+  box-shadow: inset 0 0 0 99999px rgba(255, 255, 255, 0.25);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner > h1 {
+  font-weight: 700;
+  font-size: 70px;
+  text-shadow: #7E6363 1px 0 10px;
+  color: #382929;
+}
+
+.list-category {
+  height: 180px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: solid #382929;
+}
+
+.list-category:hover {
+  border-color: #F5EEE6;
+  background-color: #9c8a7d;
+}
+
+.content {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.body-background {
+  background-color: #F5EEE6;
+}
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 85%;
+  padding: 10px;
+}
+
+.list-name {
+  text-decoration: none;
+  color: #382929;
+}
+
+.list-name:hover {
+  color: #F5EEE6;
+}
+
+.new-list {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #7E6363;
+  margin: 20px 40px;
+  border: none;
+}
+
+.new-list-link {
+  text-decoration: none;
+  color: #F5EEE6;
+  font-size: 20px;
+}
+
+.new-list:hover {
+  background-color: #c6b9aa;
+  ;
+}
+
+.new-list-link:hover {
+  color: #382929;
+}
+
+.movie-list {
+  margin-top: 40px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  border-radius: 20px;
+  border: solid #382929;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.show-link {
+  font-size: 20px;
+  color: #382929;
+  text-decoration: none;
+}
+
+.movie-form {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(244, 244, 244);
+}
+
+.padding {
+  padding: 100px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-24-bold {
+  font-size: 24px;
+  font-weight: 700;
+}
+.text-20-bold {
+  font-size: 20px;
+  font-weight: 700;
+}

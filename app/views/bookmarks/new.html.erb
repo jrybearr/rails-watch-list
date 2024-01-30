@@ -1,0 +1,14 @@
+<div class="banner d-flex justify-content-center">
+  <h1 class="font">Adding new movies🎬</h1>
+</div>
+<div class="body-background">
+  <div class="padding">
+    <div class="movie-form p-5">
+      <%= simple_form_for [@list, @bookmark] do |f| %>
+        <%= f.input :comment %>
+        <%= f.association :movie %>
+        <%= f.button :submit, class: "btn border btn-light" %>
+      <% end %>
+    </div>
+  </div>
+</div>

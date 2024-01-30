@@ -1,0 +1,20 @@
+<div class="banner d-flex justify-content-center">
+  <h1 class="font"><%= @list.name %></h1>
+</div>
+<div class="body-background p-5">
+  <div class="d-flex justify-content-end">
+    <p><%= link_to "🔖Add a bookmark", new_list_bookmark_path(@list), class: "show-link font p-2" %></p>
+    <p><%= link_to "👈🏻Back to mainpage", lists_path, class: "show-link font p-2"%></p>
+  </div>
+  <div class="movie-list d-flex flex-column">
+    <% @list.bookmarks.each do |bookmark| %>
+      <div class="p-3">
+        <h5 class="font text-24-bold"><%= bookmark.movie.title %></h5>
+        <p class="font text-20">⭐️ <%= bookmark.movie.rating %></p>
+        <p class="font text-20"> <%= bookmark.movie.overview %></p>
+        <h5 class="italic font text-20-bold">Comment:</h5>
+        <p class="font text-20"><%= bookmark.comment %></p>
+      </div>
+    <% end %>
+  </div>
+</div>

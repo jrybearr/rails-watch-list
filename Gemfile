@@ -64,3 +64,13 @@ end
 
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
+
+gem 'faker'
+
+gem "sassc-rails"
+
+gem 'bootstrap', '~> 5.3', '>= 5.3.1'
+
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
+
+gem "simple_form"
